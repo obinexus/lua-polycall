@@ -1,0 +1,27 @@
+{
+  "name": "@obinexusltd/lua-polycall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "config": "config",
+    "bin": "bin",
+    "polycall":"polycall" 
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obinexus/lua-polycall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/obinexus/lua-polycall/issues"
+  },
+  "homepage": "https://github.com/obinexus/lua-polycall#readme"
+}
