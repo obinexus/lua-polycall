@@ -1,25 +1,52 @@
 {
   "name": "@obinexusltd/lua-polycall",
   "version": "1.0.0",
-  "description": "",
+  "description": "Protocol-compliant Lua binding for LibPolyCall — adapter pattern interface to the polycall.exe runtime",
   "main": "index.js",
+  "bin": {
+    "lua-polycall": "./bin/lua-polycall"
+  },
+  "files": [
+    "bin/",
+    "config/",
+    "examples/",
+    "polycall/",
+    "index.js",
+    "lua-polycall-1.0-1.rockspec",
+    "lua.polycallrc"
+  ],
   "directories": {
     "example": "examples",
     "config": "config",
-    "bin": "bin",
-    "polycall":"polycall" 
+    "bin": "bin"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lua -e \"require('polycall'); print('Module loads OK')\"",
+    "lint": "luacheck polycall/ bin/ --std lua53",
+    "install:lua": "luarocks install lua-polycall-1.0-1.rockspec"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/obinexus/lua-polycall.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "polycall",
+    "lua",
+    "libpolycall",
+    "obinexus",
+    "adapter",
+    "protocol",
+    "binding",
+    "zero-trust",
+    "state-machine"
+  ],
+  "author": "Nnamdi Michael Okpala <okpalan@protonmail.com> (https://github.com/obinexus)",
+  "license": "MIT",
   "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0",
+    "lua": ">=5.3 <5.5"
+  },
   "bugs": {
     "url": "https://github.com/obinexus/lua-polycall/issues"
   },
